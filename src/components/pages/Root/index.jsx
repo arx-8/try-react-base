@@ -2,7 +2,7 @@
 import { css, jsx } from "@emotion/core"
 import logo from "src/logo.svg"
 
-export const App = () => {
+export const Root = () => {
   return (
     <div css={root}>
       <header css={headerCss}>
