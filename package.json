@@ -14,11 +14,25 @@
     "@testing-library/jest-dom": "5.11.0",
     "@testing-library/react": "10.4.3",
     "@testing-library/user-event": "12.0.11",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-config-standard": "14.1.1",
+    "eslint-plugin-jest": "23.17.1",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-only-error": "1.0.2",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-sort-keys-fix": "1.1.1",
+    "eslint-plugin-standard": "4.0.1",
+    "import-sort-style-module": "6.0.0",
     "npm-check-updates": "7.0.1",
+    "prettier": "2.0.5",
+    "prettier-plugin-import-sort": "0.0.4",
     "react-scripts": "3.4.1"
   },
   "scripts": {
     "build": "react-scripts build",
+    "eslint-print-config": "eslint --print-config src/index.js > misc/eslint-print-config.json",
+    "lint": "eslint -c .eslintrc.js --fix --ext .js,.jsx src",
     "start": "react-scripts start",
     "test": "react-scripts test",
     "update-all": "npm-check-updates -u"
@@ -37,5 +51,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "importSort": {
+    ".js, .jsx": {
+      "style": "module"
+    }
   }
 }
