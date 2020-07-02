@@ -32,6 +32,7 @@
   "scripts": {
     "build": "react-scripts build",
     "eslint-print-config": "eslint --print-config src/index.js > misc/eslint-print-config.json",
+    "lint-dry": "eslint -c .eslintrc.js --ext .js,.jsx src",
     "lint": "eslint -c .eslintrc.js --fix --ext .js,.jsx src",
     "start": "react-scripts start",
     "test": "react-scripts test",

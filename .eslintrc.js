@@ -12,7 +12,11 @@ module.exports = {
     "react-app",
   ],
   parser: "babel-eslint",
-  plugins: ["only-error", "sort-keys-fix"],
+  plugins: [
+    // CI で warn も検知可能にするため、全て error にする
+    "only-error",
+    "sort-keys-fix",
+  ],
   rules: {
     "import/no-default-export": "error",
     "no-param-reassign": "error",
