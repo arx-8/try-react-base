@@ -1,16 +1,18 @@
-import "src/index.css"
-
 import React from "react"
 import ReactDOM from "react-dom"
-import App from "src/App"
+import { Root } from "src/components/pages/Root"
+import { GlobalStyles } from "src/components/styles/GlobalStyles"
 import * as serviceWorker from "src/serviceWorker"
 
-ReactDOM.render(
+const App = () => (
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
+    <GlobalStyles>
+      <Root />
+    </GlobalStyles>
+  </React.StrictMode>
 )
+
+ReactDOM.render(<App />, document.getElementById("root"))
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
