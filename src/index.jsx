@@ -1,13 +1,13 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import { Root } from "src/components/pages/Root"
+import { Routes } from "src/components/helpers/Routes"
 import { GlobalStyles } from "src/components/styles/GlobalStyles"
 import * as serviceWorker from "src/serviceWorker"
 
 const App = () => (
   <React.StrictMode>
     <GlobalStyles>
-      <Root />
+      <Routes />
     </GlobalStyles>
   </React.StrictMode>
 )
