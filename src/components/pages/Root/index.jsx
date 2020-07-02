@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core"
-import logo from "src/logo.svg"
+import logo from "src/assets/logo.svg"
 
 export const Root = () => {
   return (
