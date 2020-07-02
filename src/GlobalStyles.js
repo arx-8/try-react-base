@@ -1,4 +1,6 @@
 /** @jsx jsx */
+import "normalize.css"
+
 import { Global, css, jsx } from "@emotion/core"
 import { Fragment } from "react"
 
