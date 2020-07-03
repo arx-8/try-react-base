@@ -1,48 +1,21 @@
 /** @jsx jsx */
-import { css, jsx } from "@emotion/core"
-import logo from "src/assets/logo.svg"
+import { jsx } from "@emotion/core"
+import { Link } from "react-router-dom"
+import { pt2 } from "src/components/styles/utils"
+import { routePath } from "src/constants/routePath"
 
 export const Root = () => {
   return (
-    <div css={root}>
-      <header css={headerCss}>
-        <img alt="logo" css={logoCss} src={logo} />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          css={link}
-          href="https://reactjs.org"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div css={pt2}>
+        <Link to={routePath.counter}>Counter App</Link>
+      </div>
+      <div css={pt2}>
+        <Link to={routePath.ticTacToe}>TicTacToe App</Link>
+      </div>
+      <div css={pt2}>
+        <Link to={routePath.todo}>Todo App</Link>
+      </div>
     </div>
   )
 }
-
-const root = css`
-  text-align: center;
-`
-
-const headerCss = css`
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-`
-
-const logoCss = css`
-  height: 40vmin;
-  pointer-events: none;
-`
-
-const link = css`
-  color: #61dafb;
-`

@@ -1,4 +1,6 @@
 export const routePath = {
-  not_found: "not_found",
+  counter: "/counter",
   root: "/",
+  ticTacToe: "/ticTacToe",
+  todo: "/todo",
 }
