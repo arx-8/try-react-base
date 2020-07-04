@@ -11,3 +11,7 @@ export const pt2 = css`
 export const ml = css`
   margin-left: 8px;
 `
+
+export const ml2 = css`
+  margin-left: 16px;
+`
