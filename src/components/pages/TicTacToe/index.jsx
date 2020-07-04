@@ -22,10 +22,21 @@ const initialInputValues = [
  */
 export const TicTacToe = () => {
   const [inputValues, setInputValues] = useState(initialInputValues)
+  const [currentPlayerName, setCurrentPlayerName] = useState("O")
 
   const onClickSquare = (index) => {
-    console.log(index)
+    const next = [...inputValues]
+    next[index] = currentPlayerName
+    setInputValues(next)
+    setCurrentPlayerName(currentPlayerName === "O" ? "X" : "O")
   }
+
+  const onReset = () => {
+    setInputValues(initialInputValues)
+    setCurrentPlayerName("O")
+  }
+
+  const winner = calculateWinner(inputValues)
 
   return (
     <div css={root}>
@@ -34,17 +45,17 @@ export const TicTacToe = () => {
         <div css={pt}>
           <TTTBoard
             inputValues={inputValues}
-            isGameOver={false}
+            isGameOver={winner != null}
             onClickSquare={onClickSquare}
           />
           <div css={pt}>
-            <button>Reset</button>
+            <button onClick={onReset}>Reset</button>
           </div>
         </div>
         <div css={pt}>
           <TTTGameInfo
-            currentPlayerName="O"
-            winnerPlayerName={calculateWinner(inputValues)}
+            currentPlayerName={currentPlayerName}
+            winnerPlayerName={winner}
           />
         </div>
       </div>
