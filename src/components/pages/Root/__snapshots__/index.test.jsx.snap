@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing render 1`] = `
+<div>
+  <div>
+    <div
+      class="css-6w1szs-Root"
+    >
+      <a
+        href="#/counter"
+      >
+        Counter App
+      </a>
+    </div>
+    <div
+      class="css-6w1szs-Root"
+    >
+      <a
+        href="#/ticTacToe"
+      >
+        TicTacToe App
+      </a>
+    </div>
+    <div
+      class="css-6w1szs-Root"
+    >
+      <a
+        href="#/todo"
+      >
+        Todo App
+      </a>
+    </div>
+  </div>
+</div>
+`;

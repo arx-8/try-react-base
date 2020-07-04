@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot testing O 1`] = `
+<div>
+  <button
+    class="css-cvtux9-TTTSquare"
+  >
+    O
+  </button>
+</div>
+`;
+
+exports[`snapshot testing disabled 1`] = `
+<div>
+  <button
+    class="css-cvtux9-TTTSquare"
+    disabled=""
+  >
+    X
+  </button>
+</div>
+`;
+
+exports[`snapshot testing no value 1`] = `
+<div>
+  <button
+    class="css-cvtux9-TTTSquare"
+  />
+</div>
+`;

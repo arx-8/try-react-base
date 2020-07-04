@@ -5,7 +5,7 @@ const x = "X"
 const _ = undefined
 
 describe("calculateWinner", () => {
-  it("no winner (空)", () => {
+  test("no winner (空)", () => {
     // ## Arrange ##
     const values = [
       /* eslint-disable prettier/prettier */
@@ -22,7 +22,7 @@ describe("calculateWinner", () => {
     expect(result).toStrictEqual(undefined)
   })
 
-  it("no winner (途中)", () => {
+  test("no winner (途中)", () => {
     // ## Arrange ##
     const values = [
       /* eslint-disable prettier/prettier */
@@ -39,7 +39,7 @@ describe("calculateWinner", () => {
     expect(result).toStrictEqual(undefined)
   })
 
-  it("no winner (ゲームオーバー))", () => {
+  test("no winner (ゲームオーバー))", () => {
     // ## Arrange ##
     const values = [
       /* eslint-disable prettier/prettier */
@@ -56,7 +56,7 @@ describe("calculateWinner", () => {
     expect(result).toStrictEqual(undefined)
   })
 
-  it("winner is O", () => {
+  test("winner is O", () => {
     // ## Arrange ##
     const values = [
       /* eslint-disable prettier/prettier */
@@ -73,7 +73,7 @@ describe("calculateWinner", () => {
     expect(result).toStrictEqual("O")
   })
 
-  it("winner is X", () => {
+  test("winner is X", () => {
     // ## Arrange ##
     const values = [
       /* eslint-disable prettier/prettier */
