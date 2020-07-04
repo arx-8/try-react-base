@@ -12,6 +12,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
+### `npm run lint`
+
+Run ESLint with autofix. 
+
+No autofix (Dry run): `npm run lint-dry`
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br />
@@ -32,6 +38,11 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 Update all dependencies.  
 Just write package.json.  
 Need to run `npm i`.
+
+### `npm run eslint-print-config`
+
+Outputs the configuration to be used for the file passed.<br>
+See [`ESLint --print-config`](https://eslint.org/docs/user-guide/command-line-interface#--print-config)
 
 ## Learn More
 
