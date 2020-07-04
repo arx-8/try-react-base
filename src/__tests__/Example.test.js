@@ -4,7 +4,7 @@
  * @see https://github.com/Microsoft/TypeScript/issues/15230
  */
 // eslint-disable-next-line jest/no-export
-export {}
+export { }
 
 /**
  * `npm test` が正しく動作することを確認するためのサンプル
@@ -12,7 +12,7 @@ export {}
  * @see https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#writing-tests
  */
 describe("Example", () => {
-  it("testable", () => {
+  test("testable", () => {
     expect.hasAssertions()
     // ## Arrange ##
     const list = [...[1, 2, 3, 4, 5]]
@@ -48,7 +48,7 @@ describe("Comparison of `toStrictEqual`, `toBe` and `toEqual`", () => {
     }
   }
 
-  it("`toBe` = `===`", () => {
+  test("`toBe` = `===`", () => {
     expect.hasAssertions()
     // Literal
     expect(2).not.toBe("2")
@@ -73,7 +73,7 @@ describe("Comparison of `toStrictEqual`, `toBe` and `toEqual`", () => {
     expect(classInstance).toBe(classInstance)
   })
 
-  it("`toEqual` = deepEqual", () => {
+  test("`toEqual` = deepEqual", () => {
     /* eslint-disable jest/prefer-strict-equal */
     expect.hasAssertions()
     // Literal
@@ -113,7 +113,7 @@ describe("Comparison of `toStrictEqual`, `toBe` and `toEqual`", () => {
       }
     }
 
-    it("no semantically the same", () => {
+    test("no semantically the same", () => {
       /* eslint-disable jest/prefer-strict-equal */
       expect.hasAssertions()
       expect(new LaCroix("lemon")).toEqual({ flavor: "lemon" })
@@ -131,7 +131,7 @@ describe("Exception test", () => {
     throw new Error("Lorem ipsum dolor sit amet")
   }
 
-  it("assert exception message", () => {
+  test("assert exception message", () => {
     expect.hasAssertions()
     expect(() => {
       throwable()
